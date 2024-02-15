@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body{
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 100%;
+  background-color: #B2AC88;
+  /* background-color: #9dbf9e; Sage Green */
+  font-family: 'General Sans', sans-serif;
+  color: #808080; /* Grey */
+}
+/* sage green : B2AC88 */
+
+/* Royal Yellow : #FADA5E */
+
+/* Grey: #808080 */
+
+.button {
+  color: #808080; /* Grey */
+}
+
+.secondary-text {
+  color: #808080; /* Grey */
+}
+
+
