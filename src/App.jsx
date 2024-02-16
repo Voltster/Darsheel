@@ -12,7 +12,7 @@ import Testimonial from "./components/Testimonial"
 
 const App = () => {
   return (
-    <div className="relative px-2">
+    <div className="relative px-2 w-full">
       <Navbar/>
       <Hero/>
       <About/>

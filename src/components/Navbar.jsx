@@ -9,7 +9,7 @@ import { menuSlide, slide } from './anime'
 const navigation = [
     { name: 'Home', link: 'home' },
     { name: 'About', link: 'about' },
-    { name: 'Projects', link: 'projects' },
+    // { name: 'Projects', link: 'projects' },
     { name: 'Service', link: 'service' },
     { name: 'Contact', link: 'contact' },
 ]

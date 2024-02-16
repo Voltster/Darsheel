@@ -10,7 +10,7 @@ const CountdownTimer = () => {
 
   // Dummy course data (replace with actual data)
   const course = {
-    title: `Time is running  out!
+    title: `Time is running out!
      Grab your spot fast`,
     instructor: 'Darsheel Savla',
     duration: '10 hours',
@@ -23,6 +23,19 @@ const CountdownTimer = () => {
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
+  // Effect to toggle visibility every 20 seconds
+  useEffect(() => {
+    const visibilityTimer = setInterval(() => {
+      setIsVisible(true);
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 5000); // Show for 5 seconds
+    }, 25000); // Every 20 seconds
+
+    // Cleanup function to clear interval
+    return () => clearInterval(visibilityTimer);
+  }, []);
+
   // Countdown logic
   useEffect(() => {
     const timer = isVisible && setInterval(() => {
@@ -33,26 +46,14 @@ const CountdownTimer = () => {
     return () => clearInterval(timer);
   }, [isVisible]);
 
-  // Toggle visibility of the countdown timer
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
-  };
-
   return (
-    <div className="relative">
-      {/* Button to toggle visibility */}
-      <button
-        className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-6 rounded-full shadow-md transition duration-300"
-        onClick={toggleVisibility}
-      >
-        {isVisible ? 'Hide Timer' : 'Show Timer'}
-      </button>
+    <div className="relative z-50">
       {/* Popover for countdown timer */}
       {isVisible && (
         <div className="fixed bottom-12 left-2 bg-yellow-500 p-4 rounded-md shadow-md">
           <button
             className="absolute top-0 right-2 text-gray-700 scale-150 hover:text-gray-800"
-            onClick={toggleVisibility}
+            onClick={() => setIsVisible(false)}
           >
             &times;
           </button>

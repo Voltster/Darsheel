@@ -12,8 +12,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Testimonial() {
   return (
-    <div className="py-3 mb-4">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">What Our Customers Are Saying! </h2>
+    <div className="py-20 mb-4">
+      <h2 className="text-3xl pb-8 font-bold text-gray-800 mb-8 text-center">What Our Customers Are Saying! </h2>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -31,7 +31,7 @@ export default function Testimonial() {
         <SwiperSlide className="w-full h-[50%]">
           <figure className="max-w-screen-md mx-auto text-center mb-8">
             <svg
-              className="w-6 h-6 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              className="w-6 h-6 mx-auto mb-3 text-gray-800 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -51,7 +51,7 @@ export default function Testimonial() {
                 <cite className="pe-3 font-medium text-gray-500 dark:text-white">
                   Michael Gough
                 </cite>
-                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-800">
                   CEO at Google
                 </cite>
               </div>
@@ -61,7 +61,7 @@ export default function Testimonial() {
         <SwiperSlide className="w-full h-[50%]">
           <figure className="max-w-screen-md mx-auto text-center mb-8">
             <svg
-              className="w-6 h-6 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              className="w-6 h-6 mx-auto mb-3 text-gray-800 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -81,7 +81,7 @@ export default function Testimonial() {
                 <cite className="pe-3 font-medium text-gray-500 dark:text-white">
                   Michael Gough
                 </cite>
-                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-800">
                   CEO at Google
                 </cite>
               </div>
@@ -91,7 +91,7 @@ export default function Testimonial() {
         <SwiperSlide className="w-full h-[50%]">
           <figure className="max-w-screen-md mx-auto text-center mb-8">
             <svg
-              className="w-6 h-6 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              className="w-6 h-6 mx-auto mb-3 text-gray-800 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -111,7 +111,7 @@ export default function Testimonial() {
                 <cite className="pe-3 font-medium text-gray-500 dark:text-white">
                   Michael Gough
                 </cite>
-                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-800">
                   CEO at Google
                 </cite>
               </div>
@@ -121,7 +121,7 @@ export default function Testimonial() {
         <SwiperSlide className="w-full h-[50%]">
           <figure className="max-w-screen-md mx-auto text-center mb-8">
             <svg
-              className="w-6 h-6 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              className="w-6 h-6 mx-auto mb-3 text-gray-800 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -141,7 +141,7 @@ export default function Testimonial() {
                 <cite className="pe-3 font-medium text-gray-500 dark:text-white">
                   Michael Gough
                 </cite>
-                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                <cite className="ps-3 text-sm text-gray-500 dark:text-gray-800">
                   CEO at Google
                 </cite>
               </div>

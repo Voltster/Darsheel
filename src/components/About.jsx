@@ -159,7 +159,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card-based content */}
           {cardsData.map((card, index) => (
-            <div key={index} className="bg-[#CB8709] p-6 rounded-lg shadow-md">
+            <div key={index} className="bg-[#cb8709d2] border hover:border-yellow-500 text-center hover:bg-[#cb8709] p-6 rounded-lg shadow-md">
               <div className="text-center text-3xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-700">{card.description}</p>
